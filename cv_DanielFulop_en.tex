@@ -1,0 +1,129 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\setlength{\hintscolumnwidth}{3.2cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\makeatletter
+\newcommand*{\skypesocialsymbol}{\includegraphics[height=.7\baselineskip]{skype_gray}}
+\collectionadd[skype]{socials}{ daniel.fulop@hotmail.com}
+\makeatother
+
+% personal data
+\name{Daniel}{Fulop}
+\email{nearnaln@gmail.com}                               % optional, remove / comment the line if not wanted
+\phone[mobile]{+41~79~417~3614}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\photo[96pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\social[skype]{}
+
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\setlength{\parskip}{0.5em}
+\section{Basic information}
+\cvitem{Name}{Daniel Fulop}{}
+\cvitem{Nationality}{Hungarian (with category B Swiss residence permit)}{}
+\cvitem{E-mail}{nearnaln@gmail.com}{}
+\cvitem{Phone number}{+41~79~417~3614}{}
+\cvitem{Skype}{daniel.fulop@hotmail.com}
+\cvitem{Location}{Bern}{}
+
+\section{Professional experience}
+\cventry{January 2017 -- }{Software Engineer}{mimacom ag, Bern}{}{}{JEE-based software development at a large Swiss insurance company as a consultant.\newline{}%
+JavaEE, JBoss, Kubernetes, Docker
+\newline{}
+Responsibilities:
+\begin{itemize}%
+  \item Development of an application managing the client data of the insurance company.
+  \item Packaging the application in Docker containers and deploying it to Kubernetes pods.
+  \item Close cooperation with the solution architect and refinement of the architecture being developed.
+  \item Assisting team members in migrating existing and new applications to Docker containers.
+\end{itemize}}
+
+\cventry{July 2015 -- \\ May 2016}{Software Engineer}{evosoft Hungary Kft., Budapest}{}{}{Microservices-based IoT platform development using Spring Cloud.\newline{}%
+Java (Spring Cloud), Microservices, Cloud Foundry, OAuth2, Gradle
+\newline{}
+Responsibilities:
+\begin{itemize}%
+  \item Cooperation with the remote Siemens AG teams from Germany
+  \item Extensively studied the OAuth2 framework and its Spring implementation along with the workings of an authorization server and an identity provider.
+  \item Deployed Java applications to CloudFoundry instances with scaling and developing methods to quickly find and fix cloud-only issues.
+  \item Assisted in the migration to a different CloudFoundry provider while staying in constant contact with local and remote development and operations teams.
+  \item Discussed several technology and architecture-based questions with the remote architecture team.
+\end{itemize}}
+
+\cventry{December 2014 -- \\July 2015}{Software Engineer}{Nextent Informatika Zrt. \newline and Erste Bank Hungary Zrt., Budapest}{}{}{Support of software development by creating testing tools
+\newline{}%
+Python, .NET (WPF), Oracle Database
+\newline{}
+Responsibilities:
+\begin{itemize}%
+  \item Implemented an Excel VBA application for verifying the results of different banking finance reports.
+  \item Created tools for developers in Python to ease text processing and helped create automated tests for their SQL scripts.
+  \item Made a WPF/.NET application for querying database objects and loading data between database schemas.
+  \item Developed a Subversion client with a GUI supporting the very specific tasks our team had.
+\end{itemize}}
+
+\cventry{April 2013 -- \\May 2014}{Software Engineer}{IP Systems Kft., Budapest}{}{}{Development of a natural gas transmission and trading platform.\newline{}%
+Java (Spring Framework), Oracle Database, Subversion, Maven
+\newline{}
+Responsibilities:
+\begin{itemize}
+  \item Implemented solutions to urgent problems according to an SLA agreement.
+  \item Demonstrated two weeks' progress to the client in a live demo.
+  \item Cooperated with other teams developing a different product sharing technology experiences. 
+\end{itemize}}
+
+\section{Education}
+\cventry{2011 -- 2016}{Software Engineering BSc}{Budapest University of Technology and Economics}{}{}{Specialization: Software Engineering}
+
+\section{Skills}
+\cvitem{Programming languages}{\textbf{Very good:} Java (SE and EE), SQL\newline{}\textbf{Good:} Python, JavaScript\newline{}\textbf{Beginner:} C\#}{}
+\cvitem{Frameworks}{\textbf{Very good:} Spring Framework\newline{}\textbf{Beginner:} Angular 2, .NET (MVC, Web API), WPF}{}
+\cvitem{Architectures}{REST, Microservices}{}
+\cvitem{Platforms}{Cloud Foundry, Docker, Kubernetes}{}
+\cvitem{Methodologies}{Scrum, TDD, pair programming}{}
+
+\section{Languages}
+\cvlistitem{German -- business fluent, C1}
+\cvlistitem{English -- business fluent, C1}
+
+\section{References}
+\cvitem{}{Available upon request}{}
+
+\end{document}
+
+%% end of file `template.tex'.
