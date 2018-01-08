@@ -1,4 +1,4 @@
-%% start of file `template.tex'.
+% start of file `template.tex'.
 %% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
 %
 % This work may be distributed and/or modified under the
@@ -24,14 +24,12 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 \makeatletter
-\newcommand*{\skypesocialsymbol}{\includegraphics[height=.7\baselineskip]{skype_gray}}
-\collectionadd[skype]{socials}{ daniel.fulop@hotmail.com}
 \makeatother
 
 % personal data
 \name{Daniel}{F{\"u}l{\"o}p}
 \email{nearnaln@gmail.com}                               % optional, remove / comment the line if not wanted
-\phone[mobile]{+41~77~981~0697}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\phone[mobile]{+41~79~417~3614}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \photo[96pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
@@ -53,13 +51,34 @@
 \setlength{\parskip}{0.5em}
 \section{Pers{\"o}nliche Daten}
 \cvitem{Name}{Daniel F{\"u}l{\"o}p}{}
-\cvitem{Staatsangeh{\"o}rigkeit}{ungarisch}{}
-\cvitem{E-Mail}{nearnaln@gmail.com -- bevorzugt bei der ersten Kontaktaufnahme}{}
-\cvitem{Telefon}{+41~77~981~0697 -- bevorzugte Anrufzeit: zwischen 9 und 10 Uhr morgens}{}
-\cvitem{Skype}{daniel.fulop@hotmail.com}
-\cvitem{Wohnort}{Budapest (bereit in die Schweiz umzuziehen)}{}
+\cvitem{Staatsangeh{\"o}rigkeit}{ungarisch (mit Kategorie B Aufenthaltsbewilligung f{\"u}r die Schweiz)}{}
+\cvitem{E-Mail}{nearnaln@gmail.com}{}
+\cvitem{Telefon}{+41~79~417~3614}{}
+\cvitem{Wohnort}{Bern (bereit, nach Z{\"u}rich umzuziehen)}{}
 
 \section{Berufserfahrung}
+\cventry{Januar 2017 -- }{Software-Entwickler}{mimacom ag, Bern}{}{}{JEE-Softwareentwicklung als Consultant bei einer grossen Schweizer Versicherungsfirma.\newline{}%
+JavaEE, JBoss, Kubernetes, Docker
+\newline{}
+Aufgaben:
+\begin{itemize}%
+  \item Entwicklung diverser interner Applikationen f{\"u}r das Verwalten der Kundendaten.
+  \item Die Applikation in Docker-Containers auf Kubernetes-Pods installieren.
+  \item Enge Zusammenarbeit mit den Solution-Architekten zur gemeinsamen Verfeinerung der neu entwickelten Architektur.
+  \item Unterst{\"u}tzung anderer Teammitglieder bei der Migration der existierenden Applikation in Docker-Container.
+\end{itemize}}
+
+\cventry{Juni 2016 -- \\ Januar 2017}{Software-Entwickler}{Cloudera, Budapest (mit einem einmonatigen Aufenthalt in Palo Alto, Kalifornien)}{}{}{Releasen der eigenen Hadoop-basierten Big-Data-Plattform von Cloudera.\newline{}%
+Python, Jenkins
+\newline{}
+Aufgaben:
+\begin{itemize}%
+  \item {\"U}bertragung des Release-Prozesses vom Cloudera-Hauptsitz in Silicon Valley zum neuen B{\"u}ro in Budapest.
+  \item Zusammenarbeit mit dem Release-Team in Silicon Valley beim Testen und Zusammensetzen neuer Releases.
+  \item Konfiguration und Monitoring der Jenkins-Builds der neuen Releases mit 13, haupts{\"a}chlich Hadoop-basierten Komponenten.
+  \item Auswertung der Resultate der automatisierten Tests und Zulassung des Releases.
+\end{itemize}}
+
 \cventry{Juli 2015 -- \\ Mai 2016}{Software-Entwickler}{evosoft Hungary Kft}{}{}{Entwicklung einer IoT-Plattform mit Microservices mithilfe des Spring Clouds.\newline{}%
 Java (Spring Cloud), Microservices, Cloud Foundry, OAuth2, Gradle
 \newline{}
@@ -67,8 +86,8 @@ Aufgaben:
 \begin{itemize}
   \item Zusammenarbeit mit fernen Teams der Siemens AG aus Deutschland
   \item Verwendung des OAuth2-Protokolls und seiner Implementation im Spring Framework.
-  \item Installation von Java-Anwendungen auf CloudFoundry, Fehlersuche und -behebung im Cloud.
-  \item Umstellung auf einen anderen CloudFoundry-Provider unter Zusammenarbeit mit lokalen und fernen Entwicklungsteams.
+  \item Installation von Java-Anwendungen auf Cloud Foundry, Fehlersuche und -behebung im Cloud.
+  \item Umstellung auf einen anderen Cloud Foundry-Provider unter Zusammenarbeit mit lokalen und fernen Entwicklungsteams.
   \item Teilnahme an der Ausarbeitung von technologischen und architektonischen Pl{\"a}nen mit fernen Teams.
 \end{itemize}}
 
@@ -93,15 +112,16 @@ Aufgaben:
   \item Zusammenarbeit mit Teams von unterschiedlichen Produkten um technologische Erfahrungen auszutauschen.
 \end{itemize}}
 
-\section{Ausbildung}
-\cventry{2011 -- 2016}{Informatik BSc}{Technische und Wirtschaftswissenschaftliche Universit{\"a}t Budapest}{}{}{Fachrichtung: Softwareentwicklung}
+\section{Ausbildung und Zertifizierungen}
+\cventry{2011 -- 2016}{Informatik BSc}{Technische und Wirtschaftswissenschaftliche Universit{\"a}t Budapest}{}{}{Fachrichtung: Software-Entwicklung}
+\cventry{2017}{Oracle Certified Associate}{Java 8 SE Programmer}{}{}{}
 
 
 \section{Kompetenzen}
-\cvitem{Programmiersprachen}{\textbf{Sehr gut:} Java, SQL\newline{}\textbf{Gut:} Python, JavaScript\newline{}\textbf{Anf{\"a}nger:} C\#}{}
-\cvitem{Frameworks}{\textbf{Sehr gut:} Spring Framework\newline{}\textbf{Anf{\"a}nger:} .NET (MVC, Web API), WPF}{}
+\cvitem{Programmiersprachen}{\textbf{Sehr gut:} Java (SE und EE), SQL\newline{}\textbf{Gut:} Python, JavaScript\newline{}\textbf{Anf{\"a}nger:} C\#}{}
+\cvitem{Frameworks}{\textbf{Sehr gut:} Spring Framework\newline{}\textbf{Anf{\"a}nger:} Angular 2, .NET (MVC, Web API), WPF}{}
 \cvitem{Architekturen}{REST, Microservices}{}
-\cvitem{Plattformen}{Cloud Foundry}{}
+\cvitem{Plattformen}{Cloud Foundry, Docker, Kubernetes}{}
 \cvitem{Methoden}{Scrum, TDD, Paarprogrammierung}{}
 
 \section{Sprachkenntnisse}
